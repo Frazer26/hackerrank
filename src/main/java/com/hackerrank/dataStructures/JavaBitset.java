@@ -14,38 +14,38 @@ public class JavaBitset {
 
         for (int i = 0; i < numOfOperations; i++) {
             String operation = scan.next();
-            int set1 = scan.nextInt();
+            int b1Orb2 = scan.nextInt();
             int setOrIndex = scan.nextInt();
             if (operation.equals("AND")) {
-                if (set1 == 1) {
+                if (b1Orb2 == 1) {
                     b1.and(b2);
                 }else {
                     b2.and(b1);
                 }
             }
             if (operation.equals("XOR")) {
-                if (set1 == 1) {
+                if (b1Orb2 == 1) {
                     b1.xor(b2);
                 }else {
                     b2.xor(b1);
                 }
             }
             if (operation.equals("OR")) {
-                if (set1 == 1) {
+                if (b1Orb2 == 1) {
                     b1.or(b2);
                 }else {
                     b2.or(b1);
                 }
             }
             if (operation.equals("SET")) {
-                if (set1 == 1) {
+                if (b1Orb2 == 1) {
                     b1.set(setOrIndex);
                 }else {
                     b2.set(setOrIndex);
                 }
             }
             if (operation.equals("FLIP")) {
-                if (set1 == 1) {
+                if (b1Orb2 == 1) {
                     b1.flip(setOrIndex);
                 }else {
                     b2.flip(setOrIndex);
